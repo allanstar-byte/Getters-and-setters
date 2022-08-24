@@ -10,9 +10,12 @@ class Student
   def course
     @course
   end
-  # Defining setters
+  # Defining change setters
   def set_course=(course)
     @course = course
+  end
+  def set_name=(name)
+    @name = name
   end
 end
 
@@ -20,3 +23,4 @@ student = Student.new("Moringa", "Software Engineering")
 
 puts student.name
 puts student.set_course = "Data Science"
+puts student.set_name = "Allan"
